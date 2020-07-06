@@ -42,7 +42,6 @@ public class ContAttFileDelTrans {
 				att_File_Path = Utils.checkNull((String) fileMap.get("ATT_FILE_PATH"));
 				att_Str0_Nm = Utils.checkNull((String) fileMap.get("ATT_STR0_NM"));
 				LogWrapper.biz.debug("▣ 경로:" + att_File_Path + "/" + att_Str0_Nm);
-				LogWrapper.biz.debug("▣ 파일명" + "[" + i + "]" + ":" + att_Str0_Nm);
 
 				removeFiles(att_File_Path + "/" + att_Str0_Nm);
 			}
